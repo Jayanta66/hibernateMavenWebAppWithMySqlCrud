@@ -8,12 +8,13 @@
   	<servlet-name>SaveNoteServlet</servlet-name>
   	<display-name>SaveNoteServlet</display-name>
   	<description></description>
-  	<servlet-class>web.SaveNoteServlet</servlet-class>
+  	<servlet-class>ser.SaveNoteServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>SaveNoteServlet</servlet-name>
   	<url-pattern>/SaveNoteServlet</url-pattern>
   </servlet-mapping>
+
 
 
   

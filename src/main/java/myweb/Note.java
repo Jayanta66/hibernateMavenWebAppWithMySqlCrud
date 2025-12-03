@@ -4,21 +4,12 @@ import java.util.Date;
 import java.util.Random;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 
 
-//@AllArgsConstructor
-//@NoArgsConstructor
-@Getter
-@Setter
+
 @Table(name="notes")
 @Entity
 public class Note {
@@ -41,6 +32,46 @@ public class Note {
 		this.id = new Random().nextInt(10000);
 		this.title = title;
 		this.content = content;
+		this.addedDate = addedDate;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public String getContent() {
+		return content;
+	}
+
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+
+	public Date getAddedDate() {
+		return addedDate;
+	}
+
+
+	public void setAddedDate(Date addedDate) {
 		this.addedDate = addedDate;
 	}
 

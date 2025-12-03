@@ -18,14 +18,14 @@
 <h1>Please fill your details.</h1>
 <!-- ADD FORM  -->
 
-<form action="SaveNoteServlet" method="post">
+<form method="post" action="SaveNoteServlet">
   <div class="mb-3">
     <label for="title" class="form-label">Note Title</label>
-    <input name="title" type="text" class="form-control" id="title" placeholder="Enter your note title here ."/>
+    <input name="title" type="text" class="form-control" id="title" placeholder="Enter your note title here ." required/>
   </div>
   <div class="mb-3">
     <label for="content" class="content">Note Content</label>
-	<textarea name="content" id="content"  placeholder="Enter your content here" class="form-control" style="height:300px;"></textarea>
+	<textarea name="content" id="content"  placeholder="Enter your content here" class="form-control" style="height:100px; width:200px;" required></textarea>
 
   </div>
   
