@@ -12,12 +12,12 @@
 
   </head>
   <body>    
-    <div class="container-fluid p-0 m-0">
+    <div class="container-fluid p-0 m-0 red">
 <h1>THis is home page</h1>
 
 <h1>Hi , I am Jayanta Halder. I have knowledge on java, spring boot , mysql. react , thymeleaf . jsp</h1>
 <h1>If you like my work and want to connect with me then please contact me :</h2>
-<h1>Mobile or WhatsApp: 8910425824</h1>
+<h1 class="red">Mobile or WhatsApp: 8910425824</h1>
 
 
 </div>
