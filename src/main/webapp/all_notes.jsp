@@ -33,7 +33,7 @@ Session s = FactoryProvider.getFactory().openSession();
 Query q =s.createQuery("from Note");
 List<Note> list=q.list();
 for(Note note:list){
-	out.println(note.getId()+" : "+note.getTitle()+"<br>");
+	out.println(note.getId()+" : "+note.getTitle()+"  "+note.getContent()+"<br>");
 	
 }
 
