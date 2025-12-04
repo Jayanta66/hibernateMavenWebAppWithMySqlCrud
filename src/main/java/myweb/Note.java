@@ -3,6 +3,7 @@ package myweb;
 import java.util.Date;
 import java.util.Random;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -17,6 +18,8 @@ public class Note {
 	@Id
 	private int id;
 	private String title;
+	
+	@Column(length=10000)
 	private String content;
 	
 	private Date addedDate;
