@@ -1,3 +1,4 @@
+<%@page import="org.hibernate.Transaction"%>
 <%@page import="myweb.Note"%>
 <%@page import="myweb.FactoryProvider"%>
 <%@page import="org.hibernate.Session"%>
@@ -23,11 +24,21 @@
 
 int noteId=Integer.parseInt(request.getParameter("note_id").trim());
 Session s = FactoryProvider.getFactory().openSession();
+Transaction tx = s.beginTransaction();
+
 Note note = (Note)s.get(Note.class, noteId);
+
+
+s.persist(note);
+
+tx.commit();
+
+s.close();
+
 %>
 
 
-<form method="post" action="UpdateServlet">
+<form method="post" action="SaveNoteServlet">
   <div class="mb-3">
     <label for="title" class="form-label">Note Title</label>
     <input name="title" type="text" class="form-control" id="title" placeholder="Enter your note title here ." value=<%=note.getTitle() %> required/>
@@ -40,7 +51,7 @@ Note note = (Note)s.get(Note.class, noteId);
   
   <div class="container text-center">
   
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-success">Submit</button>
   
   
   </div>
