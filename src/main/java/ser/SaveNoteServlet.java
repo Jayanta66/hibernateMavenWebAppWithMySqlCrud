@@ -60,7 +60,9 @@ public class SaveNoteServlet extends jakarta.servlet.http.HttpServlet {
 			// System.out.println(note.getId()+" "+note.getTitle());
 
 			PrintWriter out = response.getWriter();
-			out.println("<h1>Note is added successfully<h2>");
+			out.println("<h1 style='text-align:center'>Note is added successfully<h2>");
+			out.println("<h1 style='text-align:center'><a href='all_notes.jsp'>View all notes</a><h2>");
+
 
 		} catch (Exception e) {
 			e.printStackTrace();

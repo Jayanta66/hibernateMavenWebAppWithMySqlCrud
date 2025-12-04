@@ -12,7 +12,7 @@
 
   </head>
   <body>    
-    <div class="container-fluid p-0 m-0 red">
+    <div class="container-fluid p-0 m-0">
 <h1>THis is home page</h1>
 
 <h1>Hi , I am Jayanta Halder. I have knowledge on java, spring boot , mysql. react , thymeleaf . jsp</h1>

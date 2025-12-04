@@ -14,7 +14,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" aria-disabled="false">Show notes</a>
+          <a class="nav-link" href="all_notes.jsp" aria-disabled="false">Show notes</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
